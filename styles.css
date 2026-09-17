@@ -218,6 +218,14 @@
   padding: 0.05rem;
   margin-left: 0.1rem; /* 向左挪一点点 */
 }
+ h2 .section-number {
+      font-family: var(--font-mono);
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--color-highlight3);
+      vertical-align: super;
+      margin-left: 0.3rem;
+    }
     @media only screen and (max-width: 750px) {
 		.section-label {
       font-family: var(--font-mono);
@@ -237,13 +245,9 @@
       font-size: 0.8rem;
 
     }
-    .section-number {
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
-      font-weight: 200;
-      color: var(--color-highlight3);
-      vertical-align: super;
-      margin-left: 0.3rem;
+    h2 .section-number {
+      font-size: 0.7rem;
+      font-weight: 300;
     }
 	#page-research {
     padding-top: 1.1rem; /* 手机改成2rem，按需在1.5~2.5rem微调 */
@@ -251,7 +255,7 @@
 		/* 全局header手机端调整 */
   .global-header {
     max-height: unset; /* 取消固定最大高度！展开菜单时需要自动增高 */
-	padding: 0 0.2rem;
+	padding: 0 0.5rem;
 	gap: 0.1rem;
   }
 	.header-logo {
@@ -292,7 +296,7 @@
     justify-content: space-between;
     align-items: center;
 	max-height: unset;
-    padding: 0.2rem 0.3rem;
+    padding: 0.1rem 0.3rem;
     gap: 0.1rem;
   }
 }
@@ -439,14 +443,7 @@
       color: var(--color-highlight3);
       margin-bottom: 0.3rem;
     }
-    h2 .section-number {
-      font-family: var(--font-mono);
-      font-size: 1.2rem;
-      font-weight: 500;
-      color: var(--color-highlight3);
-      vertical-align: super;
-      margin-left: 0.3rem;
-    }
+   
 
     /* ===== Hero divider ===== */
     .hero-divider {
@@ -573,6 +570,10 @@
       margin: 0 auto 2rem;
     }
 	@media only screen and (max-width: 750px) {
+		.section-label {
+     
+      margin-bottom: 0.1rem;
+    }
 		.pi-message {
     padding: 2rem 1.2rem;
   }
@@ -774,13 +775,14 @@
 	  box-sizing:border-box;
     }
     @media only screen and (max-width: 700px) {
-      .pi-section { grid-template-columns: 1fr; text-align: center; }
-      .pi-section .person-avatar { margin: 0 auto;}
 	  .pi-section {
       gap: 1.2rem;
       align-items: start;
       margin-bottom: 1.2rem;
       padding: 1.2rem;
+	  grid-template-columns: 1fr; 
+	  text-align: center;
+	  margin: 0 auto;
     }
 	  .PI-avatar {
 	  width: 80px;   /* 手机相框宽度变小 */
@@ -789,6 +791,12 @@
       align-items: center;
       justify-content: center;
       object-position: center;
+	  
+    }
+	.PI-avatar img {
+	 align-items: center;
+     justify-content: center;
+     object-position: center;
     }
     }
     .pi-section .person-avatar {
