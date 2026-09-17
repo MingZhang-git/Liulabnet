@@ -842,7 +842,7 @@
 
     /* ===== News ===== */
 	#page-news h2 {
-  margin-bottom: 0.1rem; /* 调小这个值，数字越小间距越小，按需试0.4~1rem */
+  margin-bottom: 0rem; /* 调小这个值，数字越小间距越小，按需试0.4~1rem */
 }
     .news-list {
       list-style: none;
