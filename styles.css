@@ -348,6 +348,9 @@
     }
     @media only screen and (max-width: 900px) {
       .research-hero { gap: 1.25rem; }
+	  .page-view {
+      padding: 2rem 0;
+    }
     }
     .hero-text {
       font-family: var(--font-sans);
