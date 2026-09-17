@@ -847,7 +847,7 @@
     .news-list {
       list-style: none;
       padding: 0;
-      margin-top: 0.1rem;
+      margin-top: 0rem;
     }
     .news-item {
       display: grid;
