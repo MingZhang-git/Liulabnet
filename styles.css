@@ -572,7 +572,7 @@
 	@media only screen and (max-width: 750px) {
 		.section-label {
      
-      margin-bottom: 0.1rem;
+      margin-bottom: 0.2rem;
     }
 		.pi-message {
     padding: 2rem 1.2rem;
@@ -844,7 +844,7 @@
     .news-list {
       list-style: none;
       padding: 0;
-      margin-top: 1rem;
+      margin-top: 0.3rem;
     }
     .news-item {
       display: grid;
