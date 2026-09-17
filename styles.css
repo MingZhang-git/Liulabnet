@@ -233,7 +233,11 @@
       font-size: 1.5rem;
       line-height: 1.2em;
     }
-    h2 .section-number {
+	p {
+      font-size: 0.8rem;
+
+    }
+    .section-number {
       font-family: var(--font-mono);
       font-size: 0.8rem;
       font-weight: 200;
@@ -775,9 +779,9 @@
       margin-bottom: 1.2rem;
       padding: 1.2rem;
     }
-	  .PI-avatar img{
-	  width: 80px;   /* 手机相框宽度变小 */
-      height: 80px;  /* 手机相框高度变小 */
+	  .PI-avatar{
+	  width: 100px;   /* 手机相框宽度变小 */
+      height: 100px;  /* 手机相框高度变小 */
       margin:0 auto 0.8rem;
       align-items: center;
       justify-content: center;
