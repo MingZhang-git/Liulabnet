@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Liu Lab at Westlake University — Decoding neuro-immune crosstalk in the tumor microenvironment to pioneer next-generation cancer immunotherapies." />
+  <title>Gallery — Liu Lab</title>
+  <link rel="icon" href="pictures/icon.png" type="pictures/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="global-header" id="header">
+    <div class="header-inner">
+      <div class="header-logo">
+          <img src="pictures/westlakeLOGO.png" alt="Westlake University" class="header-logo-img" />
+        <a href="research.html">
+          <span class="logo-main">Liu Lab<span style="font-weight:400;color:var(--color-text-muted);font-size:0.8em;"></span></span>
+          <span class="logo-sub">NEUROIMMUNO-ONCOLOGY</span>
+        </a>
+      </div>
+	  <button class="menu-btn">☰</button>
+      <nav class="horiz-nav" id="horizNav">
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="people.html">People</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="join.html">Join Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE VIEW: Gallery                                            -->
+  <!-- ============================================================ -->
+  <section class="page-view active" id="page-gallery">
+    <div class="container">
+      <p class="section-label">Our Moments</p>
+      <h2>Gallery <span class="section-number">05</span></h2>
+
+      <!-- Photo Gallery: Team Building -->
+      <div class="gallery-section">
+        <h3>📸 Photo Gallery</h3>
+        <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 0;">Team building, lab events, and daily moments</p>
+        <div class="gallery-grid">
+          <div class="gallery-item fade-in">
+            <div class="gallery-img">
+               <img src="pictures/Graduate.png" alt="Lab Retreat 2025" /> 
+              <!-- Replace src:<span>🌄</span>-->
+            </div>
+            <div class="gallery-caption">Teachers' Day Celebration</div>
+          </div>
+          <div class="gallery-item fade-in">
+            <div class="gallery-img">
+              <img src="pictures/Ocean.png" alt="Ocean" />
+               <!-- Replace src:<span>🎉</span> -->
+            </div>
+            <div class="gallery-caption">Happy Times</div>
+          </div>
+          <div class="gallery-item fade-in">
+            <div class="gallery-img">
+              <img src="pictures/garden.png" alt="Garden" />
+               <!-- Replace src:<span>🎉</span> -->
+            </div>
+            <div class="gallery-caption">Garden Times</div>
+          </div>
+          <div class="gallery-item fade-in">
+            <div class="gallery-img">
+              <img src="pictures/Celebration.png" alt="Ocean" />
+               <!-- Replace src:<span>🎉</span> -->
+            </div>
+            <div class="gallery-caption">Celebration</div>
+          </div>
+          <div class="gallery-item fade-in">
+            <div class="gallery-img">
+              <img src="pictures/sports.png" alt="Sports" />
+               <!-- Replace src:<span>🎉</span> -->
+            </div>
+            <div class="gallery-caption">Sports</div>
+          </div>
+          <div class="gallery-item fade-in">
+            <div class="gallery-img">
+               <img src="pictures/Party.png" alt="Party" />
+               <!-- Replace src:<span>🎉</span> -->
+            </div>
+            <div class="gallery-caption">Party</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Science Gallery: Research Figures -->
+      <div class="gallery-section">
+        <h3>🔬 Science Gallery</h3>
+        <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 0;">Highlights from our research publications</p>
+        <div class="gallery-grid">
+          <div class="gallery-item fade-in">
+            <div class="gallery-img">
+              <img src="pictures/CellMetab2024.png" alt="TLK2 chromatin looping" /> 
+              <!-- Replace src: <span>🧬</span>  -->
+            </div>
+            <div class="gallery-caption">IHC staining in mouse lung tumors · </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">
+        <img src="pictures/Medicine_Logo.png" alt="Medicine" class="footer-logo-img" />
+        </div>
+      <div class="footer-affiliation">School of Medicine · Westlake University · Hangzhou, China</div>
+      <div class="footer-copy">© 2026 Liu Lab. All rights reserved.</div>
+    </div>
+  </footer>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <script>
+    const header = document.getElementById('header');
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 30);
+      backToTop.classList.toggle('visible', window.scrollY > 600);
+    });
+    backToTop.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+    }, { rootMargin: '0px 0px -60px 0px', threshold: 0.1 });
+    setTimeout(() => { document.querySelectorAll('.fade-in:not(.visible)').forEach(el => observer.observe(el)); }, 100);
+    const mapEl = document.getElementById('map');
+    if (mapEl) {
+      mapEl.innerHTML = '<div style="width:100%;height:100%;background:var(--color-bg-secondary);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;font-family:var(--font-mono);font-size:0.8rem;color:var(--color-text-muted);border-radius:8px;"><div style="font-size:2.5rem;margin-bottom:0.8rem;">📍</div><p style="margin:0.2rem 0;color:var(--color-text-primary);"><strong>Westlake University</strong></p><p style="margin:0.2rem 0;">Yungu Campus</p><p style="margin:0.2rem 0;">18 Shilongshan Street, Xihu District</p><p style="margin:0.2rem 0;">Hangzhou, Zhejiang 310024, China</p><a href="https://www.openstreetmap.org/?mlat=30.3191&mlon=120.0913#map=15/30.3191/120.0913" style="color:var(--color-highlight1);margin-top:0.8rem;font-size:0.75rem;text-decoration:underline;opacity:1;" target="_blank">Open in OpenStreetMap →</a></div>';
+    }
+	// 等页面DOM加载完成再执行，防止找不到元素
+document.addEventListener('DOMContentLoaded', function(){
+  const menuBtn = document.querySelector('.menu-btn');
+  const nav = document.querySelector('#horizNav');
+  const bodyEl = document.body;
+
+  if(menuBtn && nav){
+    menuBtn.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      const isOpen = nav.classList.contains('active');
+      if(isOpen){
+        const headerHeight = document.getElementById('header').offsetHeight;
+        bodyEl.style.paddingTop = headerHeight + 'px';
+      }else{
+        bodyEl.style.paddingTop = "";
+      }
+    });
+
+    window.addEventListener('resize',()=>{
+      nav.classList.remove('active');
+      bodyEl.style.paddingTop = "";
+    })
+  }
+  })//
+  </script>
+</body>
+</html>
