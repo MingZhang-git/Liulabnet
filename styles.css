@@ -776,8 +776,8 @@
       padding: 1.2rem;
     }
 	  .PI-avatar img{
-	  width: 100px;   /* 手机相框宽度变小 */
-      height: 100px;  /* 手机相框高度变小 */
+	  width: 80px;   /* 手机相框宽度变小 */
+      height: 80px;  /* 手机相框高度变小 */
       margin:0 auto 0.8rem;
       align-items: center;
       justify-content: center;
