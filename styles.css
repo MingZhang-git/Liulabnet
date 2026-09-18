@@ -235,7 +235,7 @@
       letter-spacing: 0.2em;
       color: var(--color-highlight3);
       margin-bottom: 0.3rem;
-	  margin-top: 0.5rem;
+	  margin-top: 1rem;
     }
 	h2 {
       font-weight: 600;
@@ -295,7 +295,6 @@
     align-items: center;
 	max-height: unset;
     padding: 0.1rem 0.1rem;
-	margin-bottom: 0.3rem auto;
     gap: 0.1rem;
   }
 }
@@ -444,6 +443,7 @@
       letter-spacing: 0.2em;
       color: var(--color-highlight3);
       margin-bottom: 0.3rem;
+	  margin-top: 0.3rem;
     }
    
 
@@ -637,7 +637,7 @@
 
     /* ===== Publications ===== */
 	#page-publications .section-label {
-     margin-top: 0.6rem;
+     margin-top: 0.3rem;
 	}
 	#page-publications .section-label {
      font-size: inherit;
