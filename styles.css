@@ -852,7 +852,7 @@
 
     /* ===== News ===== */
 	#page-news h2 {
-  margin-bottom: 0.1rem; /* 调小这个值，数字越小间距越小，按需试0.4~1rem */
+  margin-bottom: -0.5rem; /* 调小这个值，数字越小间距越小，按需试0.4~1rem */
 }
     .news-list {
       list-style: none;
@@ -924,11 +924,12 @@
 
     /* ===== Gallery ===== */
     .gallery-section {
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
     }
     .gallery-section h3 {
-      margin-top: 0;
-      padding-bottom: 0.8rem;
+      margin-top: 0.6rem;
+	  margin-bottom: 0.2rem;
+      padding-bottom: -0.2rem;
       border-bottom: 2px solid var(--color-highlight1);
       display: inline-block;
     }
@@ -936,7 +937,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1.2rem;
-      margin-top: 1.5rem;
+      margin-top: 1rem;
     }
     .gallery-item {
       background: var(--color-bg-card);
@@ -986,7 +987,17 @@
       font-weight: 500;
       font-size: 1.2rem;
       line-height: 1.3em;
-      margin: 3rem 0 0.55rem;
+      margin: 2rem 0 0.55rem;
+    }
+	.gallery-section h3 {
+	  margin-bottom: 0.1rem;
+      padding-bottom: -0.2rem;
+      border-bottom: 2px solid var(--color-highlight1);
+      display: inline-block;
+    }
+	 .gallery-grid {
+
+      margin-top: 0.7rem;
     }
 }
     /* ===== Join Us ===== */
