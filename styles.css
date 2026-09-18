@@ -972,6 +972,12 @@
       color: var(--color-text-secondary);
       text-align: center;
     }
+	h3 {
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 1.3em;
+      margin: 3rem 0 0.55rem;
+    }
 }
     /* ===== Join Us ===== */
     .join-content {
