@@ -637,10 +637,19 @@
 
     /* ===== Publications ===== */
 	#page-publications .section-label {
+     margin-top: 0.3rem;
+	}
+	#page-publications .section-label {
+     font-size: inherit;
+	}
+	@media only screen and (max-width: 700px) {
+		#page-publications .section-label {
      margin-top: 1rem;
 	}
 	#page-publications .section-label {
      font-size: inherit;
+	}
+		
 	}
     .pub-list {
       list-style: none;
