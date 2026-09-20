@@ -1215,6 +1215,12 @@
   .footer-nav-list {
     text-align:center; /* ✅ 手机导航文字居中，解决靠左 */
   }
+  /* 版权文字样式 */
+.footer-copyright {
+  max-width: 1200px;
+  margin: 0.5rem auto 0;
+  padding-top: 0.5rem;
+}
 }
 
     
