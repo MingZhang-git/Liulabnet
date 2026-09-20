@@ -1124,7 +1124,7 @@
       border-top: 1px solid var(--color-border);
       position: relative;
       z-index: 1;
-      background: var(--color-bg-primary);
+      background: #eeeeee;
     }
     .footer-logo {
       font-family: var(--font-display);
