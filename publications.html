@@ -136,15 +136,41 @@
   </section>
 
   <!-- ============================================================ -->
-  <footer>
-    <div class="container">
-      <div class="footer-logo">
-        <img src="pictures/Medicine_Logo.png" alt="Medicine" class="footer-logo-img" />
-        </div>
-      <div class="footer-affiliation">School of Medicine · Westlake University · Hangzhou, China</div>
-      <div class="footer-copy">© 2026 Liu Lab. All rights reserved.</div>
+  <footer class="site-footer">
+  <div class="footer-container">
+    <!-- 第一列：西湖大学图标 + LIU LAB -->
+    <div class="footer-col footer-col-brand">
+      <img src="pictures/Medicine_Logo.png" alt="Westlake University" class="footer-logo">
+      <p class="lab-name">Prof. Quentin Qiang Liu</p>
+	  <p>liuqiang9@westlake.edu.cn</p>
     </div>
-  </footer>
+
+    <!-- 第二列：居中，地址、邮箱 -->
+    <div class="footer-col footer-col-info">
+      <p>Westlake University<br>
+      School of Medicine<br>
+      18 Shilongshan Road, Cloud Town, Hangzhou, Zhejiang, China</p>
+	  <p>© 2026 Liu Lab. All rights reserved.</p>
+    </div>
+
+	<!-- 第三大列：内部再分2列导航 -->
+    <div class="footer-col footer-col-nav">
+      <div class="nav-two-col">
+        <ul class="footer-nav-list">
+          <li><a href="research.html">Research</a></li>
+		<li><a href="publications.html">Publications</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="news.html">News</a></li>
+        </ul>
+        <ul class="footer-nav-list">
+         <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
   <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
   <script>
     const header = document.getElementById('header');
