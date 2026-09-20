@@ -1181,6 +1181,15 @@
 .footer-nav-list a:hover {
   color: var(--color-highlight1);
 }
+/* 版权文字样式 */
+.footer-copyright {
+  max-width: 1200px;
+  margin: -3.2rem auto 0;
+  padding-top: -0.5rem;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+}
 /* 手机端：三列变成一列，全部居中 */
 @media only screen and (max-width:750px) {
   .footer-container {
