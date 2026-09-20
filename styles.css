@@ -257,7 +257,7 @@
       line-height: 1.2em;
     }
 	p {
-      font-size: 0.8rem;
+      font-size: 0.84rem;
 
     }
     h2 .section-number {
@@ -1111,40 +1111,93 @@
       border: 1px solid var(--color-border);
       background: var(--color-bg-secondary);
     }
+	 /* ===== footer ===== */
+.site-footer {
+  background: var(--color-bg-card);
+  border-top: 1px solid var(--color-border);
+  padding: 2rem 1rem 1rem;
+  margin-top: 3rem;
+  background:  #eeeeee;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.footer-col-brand {
+  text-align: left;
+}
+.footer-logo {
+  height: 52px;
+  width: auto;
+  margin-bottom: 0.8rem;
+}
+.lab-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--color-text-primary);
+  margin:0;
+}
+/* 第二列 居中 */
+.footer-col-info {
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  line-height:1.6;
+}
+.footer-col-info p {
+  margin: 0.4rem 0;
+}
+/* 第三大列，内部双列导航 */
+/* 第三大列，内部双列导航 */
+.footer-col-nav {
+  text-align: right;
+}
+.nav-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem; /* ✅ 缩小两栏之间横向间距 */
+  align-items: stretch; /* ✅ 强制左右两栏高度保持一致 */
+}
+.footer-nav-list {
+  list-style: none;
+  padding:0;
+  margin:0;
+  text-align: left;
+}
+.footer-nav-list li {
+  margin-bottom: 0.6rem;
+}
+.footer-nav-list a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size:0.9rem;
+  transition: color 0.2s ease;
+}
+.footer-nav-list a:hover {
+  color: var(--color-highlight1);
+}
+/* 手机端：三列变成一列，全部居中 */
+@media only screen and (max-width:750px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .footer-col-brand,
+  .footer-col-info,
+  .footer-col-nav {
+    text-align: center;
+  }
+  .footer-logo {
+    margin:0 auto 0.8rem;
+  }
+}
 
-    /* ===== Footer ===== */
-    .footer-logo-img {
-      height: 50px;
-      width: auto;
-      margin-bottom: 0.8rem;
-    }
-    footer {
-      padding: 2.5rem 0;
-      text-align: center;
-      border-top: 1px solid var(--color-border);
-      position: relative;
-      z-index: 1;
-      background: #eeeeee;
-    }
-    .footer-logo {
-      font-family: var(--font-display);
-      font-weight: 900;
-      font-size: 1.15rem;
-      color: var(--color-highlight1);
-      margin-bottom: 0.4rem;
-    }
-    .footer-affiliation {
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      color: var(--color-text-muted);
-      margin-bottom: 0.8rem;
-    }
-    .footer-copy {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      color: var(--color-text-muted);
-      opacity: 0.7;
-    }
+    
 
     /* ===== Animations ===== */
     .fade-in {
