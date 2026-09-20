@@ -238,7 +238,10 @@
 	  margin-top: 0.3rem;
     }
     @media only screen and (max-width: 750px) {
-		.section-label {
+	.container {
+      padding: 0.2rem 2rem;
+    }
+	.section-label {
       font-family: var(--font-mono);
       font-size: 0.5rem;
       font-weight: 400;
@@ -264,9 +267,10 @@
 		/* 全局header手机端调整 */
   .global-header {
     max-height: unset; /* 取消固定最大高度！展开菜单时需要自动增高 */
-	  min-height: 80px;
+	min-height: 65px;
 	padding: 0rem 0.8rem;
 	gap: 0.1rem;
+	align-items: center; /* ✅ 垂直居中logo、汉堡按钮 */
   }
 	.header-logo {
     flex: 1 1 auto;
