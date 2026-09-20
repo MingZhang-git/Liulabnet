@@ -264,6 +264,7 @@
 		/* 全局header手机端调整 */
   .global-header {
     max-height: unset; /* 取消固定最大高度！展开菜单时需要自动增高 */
+	  min-height: 80px;
 	padding: 0rem 0.8rem;
 	gap: 0.1rem;
   }
