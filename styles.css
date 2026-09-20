@@ -1161,6 +1161,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 0.6rem; /* ✅ 缩小两栏之间横向间距 */
   align-items: stretch; /* ✅ 强制左右两栏高度保持一致 */
+  text-align: center;
 }
 .footer-nav-list {
   list-style: none;
@@ -1177,6 +1178,7 @@
   font-family: var(--font-sans);
   font-size:0.9rem;
   transition: color 0.2s ease;
+  text-align: center;
 }
 .footer-nav-list a:hover {
   color: var(--color-highlight1);
@@ -1190,7 +1192,7 @@
   color: var(--color-text-muted);
   font-size: 0.8rem;
 }
-/* 手机端：三列变成一列，全部居中 */
+/* 手机端适配 */
 @media only screen and (max-width:750px) {
   .footer-container {
     grid-template-columns: 1fr;
@@ -1203,6 +1205,15 @@
   }
   .footer-logo {
     margin:0 auto 0.8rem;
+  }
+  .nav-two-col {
+    grid-template-columns: 1fr 1fr;
+    gap:0.6rem;
+    max-width: 400px;
+    margin:0 auto;
+  }
+  .footer-nav-list {
+    text-align:center; /* ✅ 手机导航文字居中，解决靠左 */
   }
 }
 
