@@ -239,7 +239,7 @@
     }
     @media only screen and (max-width: 750px) {
 	.container {
-      padding-top: 64px;
+      padding-top: 65px;
     }
 	.section-label {
       font-family: var(--font-mono);
